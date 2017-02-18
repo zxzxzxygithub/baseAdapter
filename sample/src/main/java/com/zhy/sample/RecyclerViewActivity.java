@@ -45,7 +45,6 @@ public class RecyclerViewActivity extends AppCompatActivity
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
 //        mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
 
         mAdapter = new CommonAdapter<String>(this, R.layout.item_list, mDatas)
